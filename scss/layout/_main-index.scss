@@ -72,17 +72,40 @@ body {
   }
   
   .projects {
-    .proyecto {
-      padding: 20px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      img {
-        width: 100%;
-        border-radius: 8px;
-      }
+    .proyectos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
     }
-  }
+
+    .proyecto {
+        background-color: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
   
   .services {
     .services-grid {
