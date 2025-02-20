@@ -136,8 +136,9 @@ form {
       li {
         padding: 10px 20px;
         border-radius: 4px;
+        background-color: rgb(223, 220, 220);
         &:hover {
-          background-color: green;
+          background-color: rgb(85, 209, 85);
           color: rgb(0, 0, 0);
         }
       }
