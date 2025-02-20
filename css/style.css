@@ -1,6 +1,6 @@
 @charset "UTF-8";
 header {
-  background: #003366;
+  background: #0056b3;
   color: #fff;
   display: flex;
   align-items: center;
@@ -29,7 +29,7 @@ header nav ul li a {
   font-weight: bold;
 }
 header nav ul li a:hover {
-  color: #f4f4f4;
+  color: rgba(255, 255, 255, 0.5843137255);
 }
 
 * {
@@ -39,9 +39,9 @@ header nav ul li a:hover {
 }
 
 html, body {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial, sans-serif";
   color: #333;
-  background-color: #f4f4f4;
+  background-color: rgba(255, 255, 255, 0.5843137255);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -111,7 +111,7 @@ form input, form textarea {
   border-radius: 5px;
 }
 form button {
-  background: #003366;
+  background: #0056b3;
   color: white;
   border: none;
   padding: 10px;
@@ -119,10 +119,6 @@ form button {
   border-radius: 5px;
   font-size: 1rem;
 }
-form button:hover {
-  background: rgb(0, 25.5, 51);
-}
-
 .video-container-n {
   display: flex;
   justify-content: center;
@@ -147,7 +143,6 @@ form button:hover {
   padding: 0;
 }
 .container-n .values-list li {
-  background-color: #3399ff;
   padding: 10px 20px;
   border-radius: 4px;
 }
@@ -214,15 +209,81 @@ form button:hover {
   left: -100%;
   width: 100%;
   height: 5px;
-  background: linear-gradient(to right, transparent, #003366);
+  background: linear-gradient(to right, transparent, #0056b3);
   transition: left 0.5s ease-in-out;
 }
 .service-item:hover::before {
   left: 100%;
 }
 
+.container-c {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.container-c h1 {
+  font-size: 2.5rem;
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+.container-c p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+.container-c section {
+  margin-bottom: 20px;
+}
+.container-c section h2 {
+  font-size: 1.8rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+.container-c section p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.container-c .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container-c .contact-form label {
+  font-weight: bold;
+  text-align: left;
+}
+.container-c .contact-form input, .container-c .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.container-c .contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.container-c .contact-form button {
+  background: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+@media (max-width: 768px) {
+  .container-c {
+    padding: 15px;
+  }
+}
 .footer {
-  background-color: #003366;
+  background-color: #0056b3;
   color: white;
   text-align: center;
   padding: 20px;
