@@ -1,24 +1,24 @@
-@import "./utilities/variables";
+@import "./utilities/_variables";
 
-@import "./utilities/mixins";
+@import "./utilities/_mixins";
 
-@import "./utilities/maps";
+@import "./utilities/_maps";
 
-@import "./base/reset";
+@import "./base/_reset";
 
-@import "./base/tipografias";
+@import "./base/_tipografias";
 
-@import "./layout/header";
+@import "./layout/_header";
 
-@import "./layout/main-index";
+@import "./layout/_main-index";
 
-@import "./layout/footer";
+@import "./layout/_footer";
 
-@import "./components/card";
+@import "./components/_card";
 
-@import "./base/tipografias";
+@import "./base/_tipografias";
 
-@import "./components/card";
+@import "./components/_card";
 
-@import "./layout/media/media";
+@import "./layout/media/_media";
 
